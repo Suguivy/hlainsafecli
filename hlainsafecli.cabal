@@ -15,7 +15,6 @@ license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
-    ChangeLog.md
 
 library
   exposed-modules:
@@ -40,7 +39,7 @@ executable hlainsafecli
       Paths_hlainsafecli
   hs-source-dirs:
       app
-  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -dynamic -O2
   build-depends:
       base >=4.7 && <5
     , bytestring
